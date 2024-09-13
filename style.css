@@ -1,0 +1,420 @@
+/* General Styles */
+* {
+    scroll-behavior: smooth;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+nav {
+    width: 100%;
+    position: -webkit-sticky; 
+    position: sticky;
+    top: 0;
+    z-index: 1000; 
+    background-color: rgb(0, 0, 0); 
+}
+
+
+nav ul {
+    border: 2px solid rgba(0, 0, 0, 0.932);
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    height: 50px;
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+}
+
+nav li {
+    padding: 0 30px;
+    list-style: none;
+}
+
+nav a {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-decoration: none;
+    color: red;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: white;
+}
+
+nav li:first-child {
+    margin-right: auto;
+    font-size: 28px;
+}
+
+.sidenav {
+    background-color: rgba(0, 0, 0, 0.849);
+    height: 100%;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 0;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+.sidenav a {
+    text-decoration: none;
+    display: block;
+    padding: 18px 8px 8px 35px;
+    color: red;
+    font-size: 20px;
+}
+
+.fa-house {
+    position: absolute;
+    top: 0;
+    right: 25px;
+}
+
+.fa-bars {
+    color: red;
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.topic {
+    width: 35%;
+    margin: auto;
+    color: white;
+    font-size: 1.5vw;
+    text-align: center;
+    float: right;
+}
+
+.topic h3 {
+    background-color: aliceblue;
+    color: red;
+    border-radius: 5px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.bike {
+    width: 60%;
+    height: auto;
+    float: left;
+}
+
+#BOOKYOURRIDE {
+    transition: 0.3s;
+}
+
+.BOOKYOURRIDE {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    display: flex;
+    font-size: 1vw;
+    justify-content: center;
+    height: 600px;
+    color: red;
+}
+
+.BOOKYOURRIDE .userinfo h1 {
+    margin: 20px 0;
+}
+
+.userinfo {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: auto;
+    width: 40%;
+    height: auto;
+}
+
+.BOOKYOURRIDE input[type=text] {
+    cursor: pointer;
+    text-transform: uppercase;
+    padding: 12px 20px;
+    margin: 8px 0;
+    width: 100%;
+    display: inline-block;
+    border: 1px solid #d10404;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.BOOKYOURRIDE .button {
+    cursor: pointer;
+    text-transform: uppercase;
+    padding: 12px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #d10404;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.BOOKYOURRIDE .button:hover {
+    background-color: #d10404;
+    transition: 0.3s;
+}
+
+.COLTNS {
+    padding: 70px 25px 0 25px;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+.COLTNS .items {
+    background-color: rgba(13, 13, 13, 0.646);
+    margin: 10px;
+    height: 350px;
+    width: 225px;
+    border-radius: 3%;
+    cursor: pointer;
+    transition: 0.8s;
+    box-shadow: 0 0 10px 0 #141313;
+}
+
+.COLTNS .items:hover {
+    box-shadow: 0 0 10px 0 #f0eeee;
+}
+
+.COLTNS .items p {
+    color: #ffffff;
+    font-size: 15px;
+    padding: 0 16px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bolder;
+}
+
+.COLTNS .items img {
+    margin: 10px 0 16px;
+    height: 140px;
+    width: 100%;
+    padding: 0 7px;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    padding: 9px 3px 0 8px;
+}
+
+.row li {
+    color: #f0eeee;
+    list-style-type: none;
+    margin: 5px;
+    font-size: 14px;
+    text-transform: capitalize;
+    font-family: Prompt;
+}
+
+.services{
+    margin: 60px 0 20px 0;
+}
+.carousel {
+    position: relative;
+    width: 100%;
+    height: 500px; 
+    overflow: hidden;
+    background: #000; 
+    z-index: 1; 
+}
+
+
+.carousel-images {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-slide {
+    flex: 0 0 100%;
+    height: 100%;
+    position: relative;
+    background-size: cover; /* Ensure the background image covers the container */
+    background-position: center; /* Center the background image */
+    background-repeat: no-repeat; /* Prevent background image from repeating */
+}
+
+.carousel-button {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(255, 255, 255, 0.664);
+    color: white;
+    padding: 15px 30px;
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.carousel-button:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+.carousel-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 10;
+    font-size: 24px;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.left-arrow {
+    left: 10px;
+}
+
+.right-arrow {
+    right: 10px;
+}
+
+.carousel-arrow:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+
+.section {
+    padding: 20px;
+    text-align: center;
+}
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.footer-content h3 {
+    margin: 0;
+    padding: 10px 0;
+    font-size: 24px;
+}
+
+.footer-content p {
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+.footer-content .socials {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.footer-content .socials li {
+    margin: 0 10px;
+}
+
+.footer-content .socials li a {
+    color: white;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+.footer-content .socials li a:hover {
+    color: #00bfff;
+}
+
+.footer-bottom {
+    padding: 10px 0;
+    border-top: 1px solid #444;
+    font-size: 12px;
+}
+
+.footer-bottom p {
+    margin: 0;
+}
+
+
+/* Responsive Adjustments */
+@media screen and (max-width: 800px) {
+    .content {
+        flex-direction: column;
+    }
+    .topic {
+        width: 100%;
+        margin-top: 30px;
+    }
+    .bike {
+        width: 100%;
+        height: auto;
+    }
+    .BOOKYOURRIDE {
+        height: 450px;
+        font-size: 2vw;
+    }
+    .COLTNS .items{
+        margin: 20px;
+    }
+    .carousel {
+        height: 300px; /* Adjust height for tablets */
+    }
+
+    .carousel-button {
+        font-size: 14px;
+        padding: 10px 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .carousel {
+        height: 200px; /* Adjust height for mobile phones */
+    }
+
+    .carousel-button {
+        font-size: 12px;
+        padding: 8px 15px;
+    }
+
+    .section {
+        padding: 15px; /* Reduce padding for smaller screens */
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .Hideonmobile {
+        display: none;
+    }
+    .fa-bars {
+        display: flex;
+    }
+    .BOOKYOURRIDE input[type=text] {
+        height: auto;
+        font-size: 10px;
+    }
+    .BOOKYOURRIDE .button {
+        width: 50px;
+        height: 25px;
+        padding: 5px;
+        margin: 8px 0;
+        font-size: 7px;
+    }
+}
+
+@media screen and (min-width: 650px) {
+    .fa-bars {
+        display: none;
+    }
+}

@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RE-MOTO</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+    <nav>
+        <ul>
+            <li><a href="#">Re-Moto</a></li>
+            <li class="Hideonmobile"><a href="#BOOKYOURRIDE">BOOK YOUR RIDE</a></li>
+            <li class="Hideonmobile"><a href="#collections">Collections</a></li>
+            <li class="Hideonmobile"><a href="#services">Services</a></li>
+            <li class="Hideonmobile"><a href="#footer">About</a></li>
+            <li><i class="fa-solid fa-bars" onclick="showSidebar()"></i></li>
+        </ul>
+    </nav>
+    <div class="sidenav" id="sidenav" >
+        <a href="#"><i class="fa-solid fa-house" onclick="hideSidebar()"></i></a>
+        <a href="#">BOOK YOUR RIDE</a>
+        <a href="#">Collections</a>
+        <a href="#">Services</a>
+        <a href="#">About</a>
+    </div>
+    
+   
+    <div class="content">
+        <div class="topic">
+            <h2>WELCOME TO RE-MOTO</h2>
+            <h3>BOOK YOUR RIDE</h3>
+            <pre style="padding-top: 15px; font-family: Verdana, Geneva, Tahoma, sans-serif;">Now you can rent bikes
+                 from <span style="color: red;">RE-MOTO</span></pre>
+
+        </div>
+        <img src="IMAGES/RE-copy.png" alt="bike" class="bike">
+    </div>
+    <div class="BOOKYOURRIDE" id="BOOKYOURRIDE">
+        <div class="userinfo">
+            <h1>BOOK YOUR RIDE</h1>
+            <div id="error-message" style="color:red; font-weight:bold;"></div>
+            <input type="text" id="username" placeholder="ENTER YOUR NAME">
+            <input type="text" id="mobile" placeholder="MOBILE NUMBER">
+            <input type="button" class="button" value="REGISTER" onclick="validate()">
+        </div>
+    </div>
+    
+    
+<div id="collections">
+    <div class="COLTNS">
+       <div class="items">
+        <img src="IMAGES/burgman-street6401ea57272dd.jpg" alt="burgman" >
+        <p>Burgman Street 125 </p> 
+         <div class="row">
+            <ul>
+                <li><b>no.of days</b></li>
+                <li>1-5days</li>
+                <li>5-10days</li>
+                <li>10-15days</li>
+             </ul>
+             <ul>
+                <li><b>rent per day</b></li>
+                <li>rs 299/-</li>
+                <li>rs 499/-</li>
+                <li>rs 799/-</li>
+             </ul>
+         </div>
+        </div>
+       <div class="items"><img src="IMAGES/pulsar n250.jpeg" alt="" >
+        <p>Pulsar n250 </p> 
+         <div class="row">
+            <ul>
+                <li><b>no.of days</b></li>
+                <li>1-5days</li>
+                <li>5-10days</li>
+                <li>10-15days</li>
+             </ul>
+             <ul>
+                <li><b>rent per day</b></li>
+                <li>rs 499/-</li>
+                <li>rs 899/-</li>
+                <li>rs 1399/-</li>
+             </ul>
+         </div>
+        </div>
+       <div class="items"><img src="IMAGES/pulsar-150.jpg" alt="" >
+        <p>pulsar-150 </p> 
+         <div class="row">
+            <ul>
+                <li><b>no.of days</b></li>
+                <li>1-5days</li>
+                <li>5-10days</li>
+                <li>10-15days</li>
+             </ul>
+             <ul>
+                <li><b>rent per day</b></li>
+                <li>rs 299/-</li>
+                <li>rs 499/-</li>
+                <li>rs 799/-</li>
+             </ul>
+         </div>
+        </div>
+       <div class="items"><img src="IMAGES/interceptor-6506415607916773.jpg" alt="">
+        <p>Interceptor-650 </p> 
+         <div class="row">
+            <ul>
+                <li><b>no.of days</b></li>
+                <li>1-5days</li>
+                <li>5-10days</li>
+                <li>10-15days</li>
+             </ul>
+             <ul>
+                <li><b>rent per day</b></li>
+                <li>rs 299/-</li>
+                <li>rs 499/-</li>
+                <li>rs 799/-</li>
+             </ul>
+         </div>
+        </div>
+    </div>
+    <div class="COLTNS">
+        <div class="items"><img src="IMAGES/cb350.jpg" alt="" >
+            
+            <p>Honda cb-350 </p> 
+         <div class="row">
+            <ul>
+                <li><b>no.of days</b></li>
+                <li>1-5days</li>
+                <li>5-10days</li>
+                <li>10-15days</li>
+             </ul>
+             <ul>
+                <li><b>rent per day</b></li>
+                <li>rs 299/-</li>
+                <li>rs 499/-</li>
+                <li>rs 799/-</li>
+             </ul>
+         </div></div>
+        <div class="items"><img src="IMAGES/glamour-right-side-view-4.jpg" alt="" >
+            <p>Glamour </p> 
+         <div class="row">
+            <ul>
+                <li><b>no.of days</b></li>
+                <li>1-5days</li>
+                <li>5-10days</li>
+                <li>10-15days</li>
+             </ul>
+             <ul>
+                <li><b>rent per day</b></li>
+                <li>rs 299/-</li>
+                <li>rs 499/-</li>
+                <li>rs 799/-</li>
+             </ul>
+         </div></div>
+        <div class="items"><img src="IMAGES/s1-pro-gen-2-right-side-view.jpg" alt="" >
+            <p>Ola s1-pro </p> 
+         <div class="row">
+            <ul>
+                <li><b>no.of days</b></li>
+                <li>1-5days</li>
+                <li>5-10days</li>
+                <li>10-15days</li>
+             </ul>
+             <ul>
+                <li><b>rent per day</b></li>
+                <li>rs 299/-</li>
+                <li>rs 499/-</li>
+                <li>rs 799/-</li>
+             </ul>
+         </div></div>
+        <div class="items"><img src="IMAGES/apache-rtr-160-4v-right-side-view-8.jpg" alt="">
+            <p>Apache rtr-160 </p> 
+         <div class="row">
+            <ul>
+                <li><b>no.of days</b></li>
+                <li>1-5days</li>
+                <li>5-10days</li>
+                <li>10-15days</li>
+             </ul>
+             <ul>
+                <li><b>rent per day</b></li>
+                <li>rs 299/-</li>
+                <li>rs 499/-</li>
+                <li>rs 799/-</li>
+             </ul>
+         </div></div>
+     </div>
+    </div> 
+    <div id="services" class="services">
+        <div class="carousel" id="carousel">
+            <div class="carousel-images">
+                <div class="carousel-slide" style="background-image: url('IMAGES/Bookyourride.png');">
+                    <a href="#BOOKYOURRIDE" class="carousel-button">BOOK YOUR RIDE</a>
+                </div>
+                <div class="carousel-slide" style="background-image: url('IMAGES/collections.png');">
+                    <a href="#collections" class="carousel-button">VIEW COLLECTIONS</a>
+                </div>
+            </div>
+            <button class="carousel-arrow left-arrow prev-button" style="position: absolute; top: 50%; left: 10px; transform: translateY(-50%); z-index: 10;">&larr;</button>
+            <button class="carousel-arrow right-arrow next-button" style="position: absolute; top: 50%; right: 10px; transform: translateY(-50%); z-index: 10;">&rarr;</button>
+            
+        </div>
+    </div>
+       
+    <footer id="footer">
+        <div class="footer-content">
+            <h3>Re-Moto</h3>
+            <p>Experience the thrill of riding with Re-Moto. Rent bikes at affordable rates and explore your world.</p>
+            <ul class="socials">
+                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+            </ul>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Re-Moto | Developed and Designed by SHASHANK</p>
+        </div>
+    </footer>
+    
+
+ 
+ 
+</div>
+
+<script src="index.js" defer></script>
+
+</body>
+</html>
